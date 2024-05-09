@@ -14,6 +14,14 @@ def twoSum(nums, target):
                 #return the indices of the two numbers
                 return [i, j]
     return None
+'''
+What is the time complexity of this method?
+The time complexity of this method is O(n^2), where n is the number of elements in the input list `nums`. 
+Here's why:
+- The method contains two nested loops: the outer loop iterates over the list `nums`, and the inner loop iterates over the list `nums` starting from the next element.
+- In the worst case scenario, the outer loop will run n times, and the inner loop will run n-1, n-2, n-3, ..., 2, 1 times, respectively.
+- The total number of iterations will be 1 + 2 + 3 + ... + n-2 + n-1 + n = n(n+1)/2, which is O(n^2).
+'''
 
 
 def twoSum1(nums, target):
